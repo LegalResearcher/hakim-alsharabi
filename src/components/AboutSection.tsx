@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Award, Users, Briefcase } from "lucide-react";
+import hakimImage from "@/assets/hakim-alsharaabi.jpg";
 
 const AboutSection = () => {
   return (
@@ -68,8 +69,12 @@ const AboutSection = () => {
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-gold/20 rounded-full blur-2xl" />
               
               <div className="relative">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-gold to-gold-light flex items-center justify-center mx-auto mb-6">
-                  <span className="text-3xl font-bold text-accent-foreground">ح</span>
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-gold to-gold-light p-1 mx-auto mb-6 overflow-hidden">
+                  <img 
+                    src={hakimImage} 
+                    alt="الأستاذ حكيم الشرعبي"
+                    className="w-full h-full rounded-full object-cover object-top"
+                  />
                 </div>
                 
                 <div className="text-center">
