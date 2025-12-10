@@ -16,10 +16,10 @@ const WhatsAppButton = () => {
       transition={{ delay: 1.5, type: "spring", stiffness: 200 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 left-6 z-50 w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow animate-pulse-gold"
+      className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow animate-pulse-gold"
       aria-label="تواصل عبر واتساب"
     >
-      <MessageCircle className="w-8 h-8 text-white" fill="white" />
+      <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" fill="white" />
       
       {/* Tooltip */}
       <span className="absolute right-20 bg-foreground text-background text-sm px-4 py-2 rounded-lg whitespace-nowrap opacity-0 hover:opacity-100 pointer-events-none transition-opacity">

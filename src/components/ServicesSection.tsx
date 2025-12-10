@@ -65,7 +65,7 @@ const ServicesSection = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -75,11 +75,11 @@ const ServicesSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group"
             >
-              <div className="h-full bg-card rounded-xl p-8 shadow-card-elegant gold-border gold-border-hover transition-all duration-500 hover:shadow-elevated hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-xl bg-primary/5 group-hover:bg-gold/10 flex items-center justify-center mb-6 transition-colors duration-300">
-                  <service.icon className="w-7 h-7 text-gold" />
+              <div className="h-full bg-card rounded-xl p-5 sm:p-6 md:p-8 shadow-card-elegant gold-border gold-border-hover transition-all duration-500 hover:shadow-elevated hover:-translate-y-1">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-primary/5 group-hover:bg-gold/10 flex items-center justify-center mb-4 sm:mb-6 transition-colors duration-300">
+                  <service.icon className="w-6 h-6 sm:w-7 sm:h-7 text-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors duration-300">
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2 sm:mb-3 group-hover:text-gold transition-colors duration-300">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">

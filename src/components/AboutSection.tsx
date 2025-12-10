@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="section-padding bg-background">
       <div className="container-legal">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -62,21 +62,21 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative order-first lg:order-last"
           >
-            <div className="bg-navy-gradient rounded-2xl overflow-hidden shadow-elevated gold-border">
+            <div className="bg-navy-gradient rounded-xl sm:rounded-2xl overflow-hidden shadow-elevated gold-border max-w-sm mx-auto lg:max-w-none">
               {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-gold/20 rounded-full blur-3xl" />
-              <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gold/10 rounded-full blur-2xl" />
+              <div className="absolute -top-4 -right-4 w-16 sm:w-24 h-16 sm:h-24 bg-gold/20 rounded-full blur-3xl" />
+              <div className="absolute -bottom-4 -left-4 w-14 sm:w-20 h-14 sm:h-20 bg-gold/10 rounded-full blur-2xl" />
               
               {/* Header Banner */}
-              <div className="bg-gradient-to-l from-gold/20 to-transparent px-8 py-4 border-b border-gold/20">
-                <span className="text-gold text-sm font-semibold tracking-wider">FOUNDER & CEO</span>
+              <div className="bg-gradient-to-l from-gold/20 to-transparent px-4 sm:px-8 py-3 sm:py-4 border-b border-gold/20">
+                <span className="text-gold text-xs sm:text-sm font-semibold tracking-wider">FOUNDER & CEO</span>
               </div>
               
-              <div className="relative p-8 md:p-10">
+              <div className="relative p-5 sm:p-8 md:p-10">
                 {/* Profile Image */}
-                <div className="relative w-36 h-36 mx-auto mb-6">
+                <div className="relative w-28 h-28 sm:w-36 sm:h-36 mx-auto mb-4 sm:mb-6">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gold via-gold-light to-gold animate-pulse opacity-50" />
                   <div className="relative w-full h-full rounded-full bg-gradient-to-br from-gold to-gold-light p-1 overflow-hidden">
                     <img 
@@ -89,32 +89,32 @@ const AboutSection = () => {
                 
                 {/* Name & Title */}
                 <div className="text-center">
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-2 sm:mb-3">
                     أ. حكيم الشرعبي
                   </h3>
-                  <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-4 py-2 mb-4">
-                    <div className="w-2 h-2 rounded-full bg-gold animate-pulse" />
-                    <span className="text-gold font-semibold text-sm">المؤسس والمدير التنفيذي</span>
+                  <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-3 sm:mb-4">
+                    <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-gold animate-pulse" />
+                    <span className="text-gold font-semibold text-xs sm:text-sm">المؤسس والمدير التنفيذي</span>
                   </div>
-                  <p className="text-primary-foreground/80 text-sm leading-relaxed max-w-xs mx-auto">
+                  <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed max-w-xs mx-auto">
                     مستشار قانوني ومستشار في التحكيم الدولي وفض المنازعات الدولية
                   </p>
                 </div>
 
                 {/* Stats */}
-                <div className="mt-8 pt-6 border-t border-gold/20">
-                  <div className="grid grid-cols-3 gap-4 text-center">
+                <div className="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-gold/20">
+                  <div className="grid grid-cols-3 gap-2 sm:gap-4 text-center">
                     <div className="group">
-                      <div className="text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+15</div>
-                      <div className="text-xs text-primary-foreground/60 mt-1">سنة خبرة</div>
+                      <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+15</div>
+                      <div className="text-[10px] sm:text-xs text-primary-foreground/60 mt-1">سنة خبرة</div>
                     </div>
                     <div className="group border-x border-gold/20">
-                      <div className="text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+1500</div>
-                      <div className="text-xs text-primary-foreground/60 mt-1">استشارة</div>
+                      <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+1500</div>
+                      <div className="text-[10px] sm:text-xs text-primary-foreground/60 mt-1">استشارة</div>
                     </div>
                     <div className="group">
-                      <div className="text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+16</div>
-                      <div className="text-xs text-primary-foreground/60 mt-1">شركة</div>
+                      <div className="text-xl sm:text-2xl md:text-3xl font-bold text-gold group-hover:scale-110 transition-transform">+16</div>
+                      <div className="text-[10px] sm:text-xs text-primary-foreground/60 mt-1">شركة</div>
                     </div>
                   </div>
                 </div>

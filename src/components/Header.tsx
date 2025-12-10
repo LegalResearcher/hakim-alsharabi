@@ -32,9 +32,9 @@ const Header = () => {
       <div className="container-legal">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <Scale className={`w-8 h-8 ${isScrolled ? "text-gold" : "text-gold"}`} />
-            <span className={`text-lg font-bold ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
+          <a href="#" className="flex items-center gap-2 sm:gap-3">
+            <Scale className={`w-6 h-6 sm:w-8 sm:h-8 ${isScrolled ? "text-gold" : "text-gold"}`} />
+            <span className={`text-sm sm:text-base md:text-lg font-bold ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
               الشرعبي للخدمات القانونية
             </span>
           </a>

@@ -28,8 +28,8 @@ const ValuesSection = () => {
   return (
     <section id="values" className="section-padding bg-navy-gradient relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-32 sm:w-64 h-32 sm:h-64 bg-gold/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-48 sm:w-96 h-48 sm:h-96 bg-gold/5 rounded-full blur-3xl" />
       
       <div className="container-legal relative">
         {/* Header */}
@@ -52,7 +52,7 @@ const ValuesSection = () => {
         </motion.div>
 
         {/* Values Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
           {values.map((value, index) => (
             <motion.div
               key={value.title}
@@ -62,14 +62,14 @@ const ValuesSection = () => {
               transition={{ duration: 0.6, delay: index * 0.15 }}
               className="group"
             >
-              <div className="text-center p-8 rounded-xl border border-gold/20 bg-primary/20 backdrop-blur-sm hover:bg-gold/10 hover:border-gold/40 transition-all duration-500">
-                <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-gold/20 transition-colors duration-300">
-                  <value.icon className="w-8 h-8 text-gold" />
+              <div className="text-center p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-gold/20 bg-primary/20 backdrop-blur-sm hover:bg-gold/10 hover:border-gold/40 transition-all duration-500 h-full">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-3 sm:mb-4 md:mb-5 group-hover:bg-gold/20 transition-colors duration-300">
+                  <value.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-gold" />
                 </div>
-                <h3 className="text-xl font-semibold text-primary-foreground mb-2">
+                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-primary-foreground mb-1 sm:mb-2">
                   {value.title}
                 </h3>
-                <p className="text-primary-foreground/60 text-sm">
+                <p className="text-primary-foreground/60 text-xs sm:text-sm">
                   {value.description}
                 </p>
               </div>
@@ -83,10 +83,10 @@ const ValuesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-16 text-center"
+          className="mt-10 sm:mt-12 md:mt-16 text-center"
         >
-          <div className="inline-block px-8 py-4 rounded-full border border-gold/30 bg-gold/5">
-            <p className="text-lg md:text-xl font-medium text-gold">
+          <div className="inline-block px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full border border-gold/30 bg-gold/5">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl font-medium text-gold">
               ✨ قانونياً، أنت في أيدٍ أمينة ✨
             </p>
           </div>
