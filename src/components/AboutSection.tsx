@@ -18,10 +18,10 @@ const AboutSection = () => {
               نبذة عن المكتب
             </span>
             <h2 className="heading-secondary text-foreground mb-6">
-              مكتب الشرعبي: خبرة رصينة والتزام بالعدالة
+              مكتب الشرعبي: خبرة والتزام 
             </h2>
             <p className="text-body text-muted-foreground mb-8 leading-relaxed">
-              مؤسس المكتب، الأستاذ <span className="text-gold font-semibold">حكيم الشرعبي</span>، مستشار قانوني ومستشار في التحكيم الدولي وفض المنازعات الدولية، بخبرة تمتد لأكثر من 15 سنة. ملتزمون بتقديم حلول قانونية دقيقة وموثوقة تحمي مصالح عملائنا وتضمن حقوقهم.
+              مؤسس المكتب، الأستاذ <span className="text-gold font-semibold">عبدالحكيم الشرعبي</span>، مستشار قانوني ومستشار في التحكيم الدولي وفض المنازعات الدولية، بخبرة تمتد لأكثر من 15 سنة. ملتزمون بتقديم حلول قانونية دقيقة وموثوقة تحمي مصالح عملائنا وتضمن حقوقهم.
             </p>
 
             {/* Features */}
@@ -81,7 +81,7 @@ const AboutSection = () => {
                   <div className="relative w-full h-full rounded-full bg-gradient-to-br from-gold to-gold-light p-1 overflow-hidden">
                     <img 
                       src={hakimImage} 
-                      alt="الأستاذ حكيم الشرعبي"
+                      alt="الأستاذ عبدالحكيم الشرعبي"
                       className="w-full h-full rounded-full object-cover object-top"
                     />
                   </div>
@@ -90,7 +90,7 @@ const AboutSection = () => {
                 {/* Name & Title */}
                 <div className="text-center">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary-foreground mb-2 sm:mb-3">
-                    أ. حكيم الشرعبي
+                    أ. عبدالحكيم الشرعبي
                   </h3>
                   <div className="inline-flex items-center gap-2 bg-gold/10 border border-gold/30 rounded-full px-3 sm:px-4 py-1.5 sm:py-2 mb-3 sm:mb-4">
                     <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-gold animate-pulse" />
