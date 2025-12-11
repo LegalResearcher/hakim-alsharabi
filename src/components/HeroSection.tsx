@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroBg from "@/assets/hero-bg.jpg";
-import { Scale } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,11 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-4 sm:mb-6"
         >
-          <Scale className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto text-gold mb-4 sm:mb-6" />
+          <img 
+            src={logo} 
+            alt="شعار مكتب الشرعبي" 
+            className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 mx-auto mb-4 sm:mb-6 rounded-xl shadow-lg object-contain"
+          />
         </motion.div>
 
         <motion.h1

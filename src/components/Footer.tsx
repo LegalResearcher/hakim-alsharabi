@@ -1,4 +1,5 @@
-import { Scale, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,11 @@ const Footer = () => {
           {/* Logo & About */}
           <div className="sm:col-span-2">
             <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-              <Scale className="w-6 h-6 sm:w-8 sm:h-8 text-gold" />
+              <img 
+                src={logo} 
+                alt="شعار مكتب الشرعبي" 
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg object-contain"
+              />
               <span className="text-lg sm:text-xl font-bold">الشرعبي للخدمات القانونية</span>
             </div>
             <p className="text-primary-foreground/70 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 max-w-md">
