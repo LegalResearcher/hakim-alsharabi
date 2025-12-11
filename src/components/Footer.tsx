@@ -89,7 +89,7 @@ const Footer = () => {
       <div className="border-t border-gold/10">
         <div className="container-legal py-4 sm:py-6 text-center">
           <p className="text-primary-foreground/50 text-xs sm:text-sm">
-            © {currentYear} مكتب الشرعبي للخدمات القانونية. جميع الحقوق محفوظة.
+            © {currentYear} الناصر تِك للحلول الرقمية (Alnasser Tech Digital Solutions). جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
