@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Scale, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = [
   { href: "#about", label: "عن المكتب" },
@@ -25,15 +26,21 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-transparent py-5"
+          ? "bg-background/95 backdrop-blur-md shadow-lg py-2"
+          : "bg-transparent py-4"
       }`}
     >
       <div className="container-legal">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 sm:gap-3">
-            <Scale className={`w-6 h-6 sm:w-8 sm:h-8 ${isScrolled ? "text-gold" : "text-gold"}`} />
+            <img 
+              src={logo} 
+              alt="شعار مكتب الشرعبي" 
+              className={`transition-all duration-300 rounded-lg object-contain ${
+                isScrolled ? "w-10 h-10 sm:w-12 sm:h-12" : "w-12 h-12 sm:w-14 sm:h-14"
+              }`}
+            />
             <span className={`text-sm sm:text-base md:text-lg font-bold ${isScrolled ? "text-foreground" : "text-primary-foreground"}`}>
               الشرعبي للخدمات القانونية
             </span>
