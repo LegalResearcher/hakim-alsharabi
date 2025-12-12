@@ -3,8 +3,11 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="section-padding bg-background">
-      <div className="container-legal">
+    <>
+      {/* Anchor to support shared links with #cntact */}
+      <span id="cntact" className="block -mt-24 pt-24" aria-hidden="true" />
+      <section id="contact" className="section-padding bg-background">
+        <div className="container-legal">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-20">
           {/* Contact Info */}
           <motion.div
@@ -142,9 +145,10 @@ const ContactSection = () => {
               </form>
             </div>
           </motion.div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
