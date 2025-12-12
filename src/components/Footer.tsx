@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Twitter, Send } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
@@ -21,9 +21,40 @@ const Footer = () => {
             <p className="text-primary-foreground/70 text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 max-w-md">
               مكتب محاماة واستشارات قانونية متخصص في تأسيس الشركات، التحكيم الدولي، وحماية الحقوق. نلتزم بتقديم أفضل الخدمات القانونية لعملائنا.
             </p>
-            <p className="text-gold font-medium">
+            <p className="text-gold font-medium mb-4">
               قانونياً، أنت في أيدٍ أمينة
             </p>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center gap-3">
+              <a 
+                href="https://www.facebook.com/share/1GxUaYEUeV/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+                aria-label="فيسبوك"
+              >
+                <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+                aria-label="تويتر"
+              >
+                <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              <a 
+                href="https://t.me/+967775238375" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-gold/10 flex items-center justify-center text-gold hover:bg-gold hover:text-primary-foreground transition-all duration-300"
+                aria-label="تليجرام"
+              >
+                <Send className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
