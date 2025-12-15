@@ -12,6 +12,11 @@ import Research from "./pages/library/Research";
 import ArabLaws from "./pages/library/ArabLaws";
 import InheritanceCalculator from "./pages/library/InheritanceCalculator";
 import Templates from "./pages/library/Templates";
+import Auth from "./pages/Auth";
+import Dashboard from "./pages/admin/Dashboard";
+import Categories from "./pages/admin/Categories";
+import Files from "./pages/admin/Files";
+import Settings from "./pages/admin/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,7 +37,11 @@ const App = () => (
           <Route path="/library/arab-laws" element={<ArabLaws />} />
           <Route path="/library/inheritance-calculator" element={<InheritanceCalculator />} />
           <Route path="/library/templates" element={<Templates />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/admin" element={<Dashboard />} />
+          <Route path="/admin/categories" element={<Categories />} />
+          <Route path="/admin/files" element={<Files />} />
+          <Route path="/admin/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
