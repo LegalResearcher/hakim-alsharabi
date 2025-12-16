@@ -18,6 +18,7 @@ interface LibraryFile {
   file_type: string;
   category_id: string;
   is_published: boolean;
+  is_external: boolean | null;
   created_at: string;
   library_categories: { name: string } | null;
 }
