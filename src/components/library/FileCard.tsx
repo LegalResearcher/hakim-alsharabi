@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { PDFViewer } from "./PDFViewer";
-import { FileText, Eye, Download } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { DocumentViewer } from "./DocumentViewer";
+import { Eye, Image as ImageIcon } from "lucide-react";
 
 interface FileCardProps {
   id: string;
@@ -20,8 +19,9 @@ export const FileCard = ({ id, title, description, fileUrl, fileType }: FileCard
     setIsViewerOpen(true);
   };
 
-  const getFileIcon = () => {
-    switch (fileType.toLowerCase()) {
+  const getFileEmoji = () => {
+    const type = fileType.toLowerCase();
+    switch (type) {
       case "pdf":
         return "📄";
       case "doc":
@@ -30,6 +30,12 @@ export const FileCard = ({ id, title, description, fileUrl, fileType }: FileCard
       case "xls":
       case "xlsx":
         return "📊";
+      case "jpg":
+      case "jpeg":
+      case "png":
+      case "gif":
+      case "webp":
+        return "🖼️";
       default:
         return "📁";
     }
@@ -41,7 +47,7 @@ export const FileCard = ({ id, title, description, fileUrl, fileType }: FileCard
         <CardContent className="p-6">
           <div className="flex items-start gap-4">
             <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-2xl shrink-0 group-hover:scale-110 transition-transform">
-              {getFileIcon()}
+              {getFileEmoji()}
             </div>
             <div className="flex-1 min-w-0">
               <h3 className="font-semibold text-foreground text-lg mb-1 line-clamp-2">
@@ -73,9 +79,10 @@ export const FileCard = ({ id, title, description, fileUrl, fileType }: FileCard
         </CardContent>
       </Card>
 
-      <PDFViewer
+      <DocumentViewer
         url={fileUrl}
         title={title}
+        fileType={fileType}
         isOpen={isViewerOpen}
         onClose={() => setIsViewerOpen(false)}
       />
