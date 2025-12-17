@@ -49,6 +49,7 @@ export type Database = {
       }
       library_files: {
         Row: {
+          allow_download: boolean | null
           category_id: string
           created_at: string
           created_by: string | null
@@ -64,6 +65,7 @@ export type Database = {
           updated_at: string
         }
         Insert: {
+          allow_download?: boolean | null
           category_id: string
           created_at?: string
           created_by?: string | null
@@ -79,6 +81,7 @@ export type Database = {
           updated_at?: string
         }
         Update: {
+          allow_download?: boolean | null
           category_id?: string
           created_at?: string
           created_by?: string | null
@@ -102,6 +105,39 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          phone: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
       }
       user_roles: {
         Row: {

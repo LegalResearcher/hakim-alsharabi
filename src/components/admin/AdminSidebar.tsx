@@ -7,7 +7,8 @@ import {
   LogOut,
   Menu,
   X,
-  Scale
+  Scale,
+  Users
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -21,6 +22,7 @@ const menuItems = [
   { icon: LayoutDashboard, label: "الرئيسية", path: "/admin" },
   { icon: FolderOpen, label: "الأقسام", path: "/admin/categories" },
   { icon: FileText, label: "الملفات", path: "/admin/files" },
+  { icon: Users, label: "المستخدمون", path: "/admin/users" },
   { icon: Settings, label: "الإعدادات", path: "/admin/settings" },
 ];
 

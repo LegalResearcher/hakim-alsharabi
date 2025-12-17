@@ -44,6 +44,7 @@ export const FileUploadForm = ({ onSuccess, onCancel, editingFile }: FileUploadF
   const [categoryId, setCategoryId] = useState(editingFile?.category_id || "");
   const [isPublished, setIsPublished] = useState(editingFile?.is_published ?? true);
   const [isExternal, setIsExternal] = useState(editingFile?.is_external ?? true);
+  const [allowDownload, setAllowDownload] = useState((editingFile as any)?.allow_download ?? true);
   const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(false);
   const [uploading, setUploading] = useState(false);
@@ -184,6 +185,7 @@ export const FileUploadForm = ({ onSuccess, onCancel, editingFile }: FileUploadF
         category_id: categoryId,
         is_published: isPublished,
         is_external: isExternal,
+        allow_download: allowDownload,
       };
 
       let error;
@@ -366,6 +368,17 @@ export const FileUploadForm = ({ onSuccess, onCancel, editingFile }: FileUploadF
           id="published"
           checked={isPublished}
           onCheckedChange={setIsPublished}
+        />
+      </div>
+
+      <div className="flex items-center justify-between p-4 bg-muted rounded-lg">
+        <Label htmlFor="allowDownload" className="cursor-pointer">
+          السماح بالتحميل
+        </Label>
+        <Switch
+          id="allowDownload"
+          checked={allowDownload}
+          onCheckedChange={setAllowDownload}
         />
       </div>
 
