@@ -16,6 +16,7 @@ import Auth from "./pages/Auth";
 import Dashboard from "./pages/admin/Dashboard";
 import Categories from "./pages/admin/Categories";
 import Files from "./pages/admin/Files";
+import Users from "./pages/admin/Users";
 import Settings from "./pages/admin/Settings";
 import NotFound from "./pages/NotFound";
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/categories" element={<Categories />} />
           <Route path="/admin/files" element={<Files />} />
+          <Route path="/admin/users" element={<Users />} />
           <Route path="/admin/settings" element={<Settings />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

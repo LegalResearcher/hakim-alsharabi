@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { FileUploadForm } from "@/components/admin/FileUploadForm";
 import { useToast } from "@/hooks/use-toast";
-import { Plus, Search, Edit, Trash2, Eye, EyeOff, FileText, Filter } from "lucide-react";
+import { Plus, Search, Edit, Trash2, Eye, EyeOff, FileText, Filter, Download } from "lucide-react";
 
 interface LibraryFile {
   id: string;
@@ -19,6 +19,8 @@ interface LibraryFile {
   category_id: string;
   is_published: boolean;
   is_external: boolean | null;
+  allow_download: boolean | null;
+  download_count: number | null;
   created_at: string;
   library_categories: { name: string } | null;
 }
@@ -196,6 +198,12 @@ const Files = () => {
                       <h3 className="font-medium text-foreground">{file.title}</h3>
                       <p className="text-sm text-muted-foreground">
                         {file.library_categories?.name} • {file.file_type.toUpperCase()}
+                        {(file.download_count ?? 0) > 0 && (
+                          <span className="mr-2 inline-flex items-center gap-1">
+                            <Download className="w-3 h-3" />
+                            {file.download_count}
+                          </span>
+                        )}
                       </p>
                     </div>
                     <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
