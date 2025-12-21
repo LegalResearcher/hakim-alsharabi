@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+﻿# مكتب الشرعبي للخدمات القانونية | Al-Sharabi Legal Services
 
-## Project info
+الموقع الرسمي لمكتب الشرعبي، شريككم القانوني الأول نحو حماية الحقوق وتحقيق العدالة. نقدم خدمات قانونية متكاملة بخبرة مؤسسية تتجاوز 15 عاماً في قلب العاصمة صنعاء.
 
-**URL**: https://lovable.dev/projects/4a6fb0a3-7b3f-4873-9c70-a92815d5d17a
+**رابط الموقع:** [https://hakim-alsharabi.vercel.app](https://hakim-alsharabi.vercel.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ⚖️ عن المكتب
 
-**Use Lovable**
+مكتب الشرعبي هو مؤسسة قانونية رائدة تتخصص في تقديم الحلول القانونية المبتكرة للأفراد والشركات.
+**أبرز تخصصاتنا:**
+* تأسيس الشركات والعلامات التجارية.
+* التحكيم الدولي وفض النزاعات.
+* الاستشارات القانونية المتخصصة.
+* حماية الحقوق والملكية الفكرية.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4a6fb0a3-7b3f-4873-9c70-a92815d5d17a) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 التقنيات المستخدمة (Technologies)
 
-**Use your preferred IDE**
+تم تطوير الموقع الإلكتروني باستخدام أحدث تقنيات الويب لضمان السرعة، الأمان، والمظهر الاحترافي:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Vite**: لأداء عالي وسرعة استجابة فائقة.
+- **TypeScript**: لضمان استقرار البرمجية وخلوها من الأخطاء.
+- **React**: لبناء واجهة مستخدم تفاعلية وعصرية.
+- **shadcn-ui**: لتوفير عناصر تصميم أنيقة تليق بالهوية القانونية.
+- **Tailwind CSS**: لتنسيق وتصميم الصفحات بمرونة عالية.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 💻 دليل المطورين (Setup Guide)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+لتشغيل المشروع على جهازك المحلي أو المساهمة في التطوير، اتبع الخطوات التالية:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**المتطلبات:** تأكد من تثبيت [Node.js](https://nodejs.org/) و [Git](https://git-scm.com/) على جهازك.
 
-# Step 3: Install the necessary dependencies.
+```bash
+# 1. استنساخ المستودع (Clone)
+git clone [https://github.com/LegalResearcher/hakim-alsharabi.git](https://github.com/LegalResearcher/hakim-alsharabi.git)
+
+# 2. الدخول إلى مجلد المشروع
+cd hakim-alsharabi
+
+# 3. تثبيت الحزم والمكاتب اللازمة
 npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. تشغيل السيرفر المحلي (للمعاينة)
 npm run dev
-```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4a6fb0a3-7b3f-4873-9c70-a92815d5d17a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
